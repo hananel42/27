@@ -153,20 +153,19 @@
             fullscreenBtn.style.display = "none";  // החבאת כפתור הכניסה למסך מלא אחרי הלחיצה
         });
 
-        // יצירת גל עם לחיצה או מגע במסך
-        canvas.addEventListener("touchstart", (event) => {
-    for (let touch of event.touches) {
-        createWave(touch.clientX, touch.clientY);
-    }
-    event.preventDefault(); // מונע פעולות ברירת מחדל
-});
+canvas.addEventListener("touchstart", (event) => {
+            for (let touch of event.touches) {
+                createWave(touch.clientX, touch.clientY);
+            }
+            event.preventDefault();
+        });
 
-canvas.addEventListener("touchmove", (event) => {
-    for (let touch of event.touches) {
-        createWave(touch.clientX, touch.clientY);
-    }
-    event.preventDefault(); // מונע פעולות ברירת מחדל
-});
+        canvas.addEventListener("touchmove", (event) => {
+            for (let touch of event.touches) {
+                createWave(touch.clientX, touch.clientY);
+            }
+            event.preventDefault();
+        });
 
         // עדכון גודל הקנבס במקרה של שינוי גודל חלון
         window.addEventListener("resize", () => {
