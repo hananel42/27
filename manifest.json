@@ -16,6 +16,11 @@
       "src": "Screenshot_20250325-151932~2.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "Screenshot_20250325-151932~2.png",
+      "sizes": "2048x2048",
+      "type": "image/png"
     }
   ]
 }
