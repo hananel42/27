@@ -1,7 +1,7 @@
 const CACHE_NAME = "hananel42-cache-v1";
 const urlsToCache = [
-  "/27/", // דף הבית
-  "/27/index.html"
+  "/Infinite-Particle-Waves/", // דף הבית
+  "/Infinite-Particle-Waves/index.html"
 ];
 
 // התקנת ה-Service Worker ואחסון הקבצים בזיכרון המטמון
