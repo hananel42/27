@@ -137,7 +137,7 @@
         function createWave(x, y) {
             
             waves.push(new Wave(x, y));
-            waves = waves.filter(wave => wave.active);
+            waves = waves.filter(wave => wave.active===true);
         }
 
         // הוספת אירוע למעבר למסך מלא
