@@ -1,8 +1,8 @@
 {
-  "name": "Hananel42 App",
-  "short_name": "Hananel42",
+  "name": "Infinite Particle Waves App",
+  "short_name": "Infinite Particle Waves",
   "description": "אפליקציית PWA לאתר A",
-  "start_url": "https://hananel42.github.io/27/",
+  "start_url": "https://hananel42.github.io/Infinite-Particle-Waves/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
