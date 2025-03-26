@@ -41,10 +41,10 @@
         // עדכון מידות הקנבס
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-
+        let csg = (canvas.width**2+canvas.height**2)**0.5+100;
         const particles = [];
         const numParticles = 7000;
-        const waves = [];
+        let waves = [];
 
         class Particle {
             constructor(x, y) {
@@ -100,7 +100,7 @@
             expand() {
                 if (this.active) {
                     this.radius += this.speed;
-                    if (this.radius > Math.max(canvas.width, canvas.height) * 1.5) {
+                    if (this.radius > csg) {
                         this.active = false;
                     }
                 }
@@ -172,6 +172,7 @@ canvas.addEventListener("touchstart", (event) => {
         window.addEventListener("resize", () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
+            csg = (canvas.width**2+canvas.height**2)**0.5+100;
             particles.length = 0;
             createParticles();
         });
